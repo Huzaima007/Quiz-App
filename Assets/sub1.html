@@ -7,6 +7,54 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
+    <!-- HTML Section -->
+<div class="quiz-container">
+
+    <!-- For HTML Quiz -->
+    <div class="quiz-card">
+        <div class="quiz-top">
+            <i class="fab fa-html5"></i>
+        </div>
+        <div class="quiz-mid">
+            <h2>HTML</h2>
+        </div>
+        <div class="quiz-bottom">
+            <button onclick="startHtmlQuiz()">Start Quiz</button>
+        </div>
+    </div>
+
+    <div class="quiz-modal" id="html-quiz-modal">
+        <span onclick="closeHtmlQuiz()">X</span>
+        <div class="quiz-modal-heading">
+            <h2>HTML Quiz</h2>
+        </div>
+        <div class="quiz-question">
+            <h5 id="html-question"></h5>
+        </div>
+        <div class="quiz-options">
+            <button class="html-ans" onclick="htmlOption(this)"></button>
+            <button class="html-ans" onclick="htmlOption(this)"></button>
+            <button class="html-ans" onclick="htmlOption(this)"></button>
+            <button class="html-ans" onclick="htmlOption(this)"></button>
+        </div>
+        <div class="quiz-button">
+            <button onclick="htmlNext()">Next</button>
+        </div>
+    </div>
+
+    <div class="quiz-score-container" id="html-quiz-score">
+        <span onclick="htmlScoreClose()" class="score-close">X</span>
+        <div class="quiz-score-heading">
+            <h2>HTML Quiz Score</h2>
+        </div>
+        <div class="quiz-score-content">
+            <p>Congratulations your score is</p>
+            <p><strong><span id="html-score"></span></strong> / <strong>10</strong></p>
+        </div>
+    </div>
+
+</div>
+
     <script src="./index.js"></script>
 </body>
 </html>
