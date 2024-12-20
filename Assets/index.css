@@ -110,7 +110,7 @@ body {
     height: 40px;
     width: 100px;
     border: 1px solid transparent;
-    background: linear-gradient(90deg, #03a9f4, #f441a5);
+    /* background: linear-gradient(90deg, #03a9f4, #f441a5); */
     border-radius: 5px;
     color: #fff;
     font-size: 16px;
@@ -118,3 +118,6 @@ body {
     cursor: pointer;
 }
 
+.buttons button .quit {
+
+}
