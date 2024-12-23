@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 * {
     margin: 0;
@@ -6,7 +6,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
 
 body {
     background: #03a9f4;
@@ -26,7 +25,7 @@ body {
     position: absolute;
     transform: translate(-50%, -50%);
     padding: 3px;
-    background: linear-gradient(90deg, #03a9f4, #f441a5);
+    background: linear-gradient(90deg, #00aeff, #f441a5);
     border-radius: 0.9em;
     transition: all 0.4s ease;
 }
@@ -56,7 +55,7 @@ body {
 }
 
 .start_btn :hover::before {
-    background: linear-gradient(90deg, #03a9f4, #f441a5);
+    background: linear-gradient(90deg, #00aeff, #f441a5);
     filter: blur(1.2em);
 }
 
@@ -66,9 +65,11 @@ body {
 
 /* Info Box Start  */
 .info_box {
+    display: none;
     width: 540px;
     background: #fff;
     border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .info_box .info_title {
@@ -110,14 +111,29 @@ body {
     height: 40px;
     width: 100px;
     border: 1px solid transparent;
-    /* background: linear-gradient(90deg, #03a9f4, #f441a5); */
     border-radius: 5px;
-    color: #fff;
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.buttons button .quit {
+.info_box .buttons .restart {
+    background: linear-gradient(90deg, #03a9f4, #f441a5);
+    color: #fff;
+}
 
+.info_box .buttons .restart:hover {
+    background: linear-gradient(90deg, #03a9f4, #f441a5);
+    color: #000;
+}
+
+.info_box .buttons .quit {
+    background: linear-gradient(90deg, #03a9f4, #f441a5);
+    color: #fff;
+}
+
+.info_box .buttons .quit:hover {
+    background: linear-gradient(90deg, #03a9f4, #f441a5);
+    color: #000;
 }
